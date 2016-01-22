@@ -23,11 +23,11 @@
       </form>
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Create</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {% with UserName = session['username'] %}
         {% if UserName %}
+        <li><a href="/upload">Upload</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             {{UserName}}

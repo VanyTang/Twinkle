@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  {% extends "base.html" %}
+  {% block content %}
+  <div class="container col-lg-4"></div>
+  <div class="container col-lg-4">
+      <h2 class="form-heading">Upload the Paper</h2>
 
-</body>
-</html>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <div class="alert alert-danger" role="alert">
+          <ul class="flashes">
+              {% for message in messages %}
+              <li>{{ message }}</li>
+              {% endfor %}
+          </ul>
+      </div>
+      {% endif %}
+      {% endwith %}
+      <form class="form-horizontal" method="post" action="upload" enctype="multipart/form-data">
+        <label for="inputTitle" class="sr-only">Title</label>
+        <input type="text" name='inputTitle' id="inputTitle" class="form-control" placeholder="Please Input the Title" required autofocus>
+
+        <label for="inputFile" class="sr-only">InputFile</label>
+        <input type="file" name="file" id="inputFile" class="form-control"/>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+      </form>
+
+    </div>
+  <div class="container col-lg-4"></div>
+{% endblock %}
+

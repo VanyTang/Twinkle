@@ -3,6 +3,7 @@ from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'MONGO'
+app.config['UPLOAD_FOLDER'] = './filetmp/'
 
 mongo = PyMongo(app)
 
