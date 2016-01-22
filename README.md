@@ -40,7 +40,7 @@ Boostrap + Python + Flask + MongoDB
 
 ### Upload Module
 
-- [ ] 1. Upload function & UI
+- [x] 1. Upload function & UI
 - [ ] 2. Database (MongoDB save & load)
 - [ ] 3. Matching text real-time when typing name/author/etc.
 
@@ -55,8 +55,27 @@ Boostrap + Python + Flask + MongoDB
 - [ ] 1. Feeds (UI & Database of action recording)
 - [ ] 2. Follow & Unfollow (UI & Database)
 
+---
+
 ## Technique TODO
 
 - [ ] Flask-WTF (Secure Login)
-- [ ] MongoDB自设Key的方法，不用ObjectID
+- [ ] Set my MongoDB Key，not ObjectID generated automatically
+- [ ] Create the database automatically
+- [ ] Drag support when upload the file
+- [ ] Progress Bar when upload the file
 - [ ] TODO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
